@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css">
+    <title>PassWord</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password <span class="make">Generator</span></h1>
+        <div class="result">
+            <span id="result"></span>
+            <button id="copy" class="btn one">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Password length</label>
+                <input type="number" id="length" min="4" max="20" value="20">
+            </div>
+
+            <div class="setting">
+                <label>Uppercase letters</label>
+                <input type="checkbox" id="Uppercase" checked>
+            </div>
+
+            <div class="setting">
+                <label>Lowercase letters</label>
+                <input type="checkbox" id="lowercase"  checked>
+            </div>
+
+            <div class="setting">
+                <label>Number </label>
+                <input type="checkbox" id="Number"  checked>
+            </div>
+
+            <div class="setting">
+                <label>symbols </label>
+                <input type="checkbox" id="symbols"  checked>
+            </div>
+        </div>
+
+        <button class="btn lg" id="Generate">Generator password</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
